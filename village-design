@@ -36,7 +36,7 @@ void sun(double x, double y)
 void fence(int x)
 {
     glBegin(GL_POLYGON);
-        glColor3ub(184,134,11);
+        glColor3ub(205,133,63);
         glVertex2i(190-x,130);
         glVertex2i(190-x,70);
         glVertex2i(187-x,70);
@@ -48,7 +48,7 @@ void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
 //-----------------------sky------------------------------------------------------------------
-    glColor3ub(135,206,250);//light blue
+    glColor3ub(0,191,255);//light blue
         glRecti(-200,300,200,100);
 //-----------------------------------field------------------------------
     glBegin(GL_POLYGON);
@@ -76,7 +76,7 @@ void display()
         fence(x);
         x+=10;
     }
-   glColor3ub(184,134,11);
+   glColor3ub(205,133,63);
     glRecti(-200,120,200,115);
     glRecti(-200,100,200,95);
     glRecti(-200,85,200,80);
@@ -195,7 +195,7 @@ void display()
    glEnd();
 //------------------------------------------RIVER--------------------------------------------------
     glBegin(GL_POLYGON);
-        glColor3ub(30,144,255);
+        glColor3ub(0,0,128);
         glVertex2i(-200,-50);
         glVertex2i(200,-30);
         glColor3ub(0,0,128);
@@ -257,36 +257,7 @@ void display()
 
     //--------------------------BOAT FLAG----------------------------
     glBegin(GL_POLYGON);
-        glColor3ub(173,216,230);
-        glVertex2i(-57,-40);
-        glVertex2i(-50,-10);
-        glVertex2i(-49,10);
-        glVertex2i(-50,30);
-        glVertex2i(-55,45);
-        glVertex2i(-63,57);
-        glVertex2i(-73,68); // end
-        glVertex2i(-105,45);
-        glVertex2i(-50,-10);
-    glEnd();
-    glBegin(GL_POLYGON);
-        glColor3ub(173,216,230);
-
-        glVertex2i(-68,-70);
-        glVertex2i(-57,-40);
-        glVertex2i(-85,10);
-        glVertex2i(-68,-70);
-    glEnd();
-    glBegin(GL_POLYGON);
-        glColor3ub(173,216,230);
-        glVertex2i(-85,-100);
-        glVertex2i(-68,-70);
-        glVertex2i(-80,-10);
-        glVertex2i(-85,-100);
-	glEnd();
-   glColor3ub(139,69,19);
-    glRecti(-88,80,-86,-100);  // Boat stand
-    glBegin(GL_POLYGON);
-        glColor3f(0.55,0.27,0.0745);//wood color
+        glColor3f(255,0,0);//wood color
         glVertex2i(-85,-100);
         glVertex2i(-87,-80);
         glVertex2i(-93,-62);
@@ -297,7 +268,7 @@ void display()
         glVertex2i(-85,-100);
     glEnd();
     glBegin(GL_POLYGON);
-        glColor3f(0.55,0.27,0.0745);//wood color
+        glColor3f(255,0,0);//wood color
         glVertex2i(-150,-100);
         glVertex2i(-148,-80);
         glVertex2i(-142,-62);
